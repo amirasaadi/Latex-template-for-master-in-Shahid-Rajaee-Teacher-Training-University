@@ -1,0 +1,14 @@
+\section{Discussion}
+In section \ref{sec:result} we see the results of our clustering in base and six different case and after that their evaluation with five different measure including: precision, recall, f1-score and confusion matrix.
+\\
+From the results we understand DBSCAN has three main parameter
+\begin{enumerate}
+	\item $ \epsilon $
+	\item MinPoint
+	\item Distance Function
+\end{enumerate}
+These six experiment show if we make $\epsilon$ smaller it will make more data as noise and on the other side if we choose larger value we have less noise data but if it is large enough it may merge two cluster.
+\newline
+The other parameter is MinPoint results shows that if we choose smaller value it will make more clusters which maybe they are not actually cluster figure \ref{fig:p2-3} is example of that on the other hand if we choose large value for MinPoint as it requires lots of point to be dense then we may have more border points and noise point.
+\\
+Testing many different distance function such as: cityblock, cosine, euclidean, l1, l2, manhattan’ ‘braycurtis, canberra, chebyshev, correlation, dice, hamming, jaccard, kulsinski, mahalanobis, minkowski, rogerstanimoto, russellrao, seuclidean, sokalmichener, sokalsneath, sqeuclidean and yule show that the default one(euclidean) has the best results and after that manhattan distance while most of others function fails badly and could find just one cluster in three circle cluster.

@@ -1,0 +1,22 @@
+\section{Introduction}
+``Cluster analysis or clustering is the task of grouping a set of objects in such a way that objects in the same group (called a cluster) are more similar (in some sense) to each other than to those in other groups (clusters)''\cite{enwiki:1005655155}
+\newline
+% why clustering
+We use clustering when have some data with out label or tag for example consider we have a lot of height and weight measurements of cat and dog and wants to group them without knowing the animal type. these groups of algorithm called unsupervised learning in machine learning. in reality there are more situations that you have the data but you don't have the label.
+\newline
+These algorithms have many application such as: bioinformatics, Medicine, Business and marketing, World wide web, Computer science, Social science and etc. for example in medical imaging clustering can help to differentiate between different types of tissue in a three-dimensional image for many different purposes\cite{filipovych2011semi}.
+There are many way you can separate clustering methods one of them depends on nature of algorithms.
+In thins manner wen can define five different type of clustering algorithms including:
+\begin{enumerate}
+	\item Connectivity-based clustering (hierarchical clustering)
+	\item Centroid-based clustering
+	\item Distribution-based clustering
+	\item Density-based clustering
+	\item Grid-based clustering
+\end{enumerate}
+In this homework we want to analyses some cases with different data and parameters of Density-based Spatial Clustering Of Applications With Noise - DBSCAN method. as the algorithm name shows this algorithm belongs to forth group, named Density-based clustering.
+\newline
+In density based approaches we define a group of data a cluster if they have enough density and objects in spare areas are considered noise or border points.DBSCAN and OPTICS\footnote{Ordering points to identify the clustering structure} are most known in density based approaches. we can say OPTICS is generalized form of DBSCAN.
+\newline
+It was first introduced in 1996 by Ester et al \cite{ester1996density}.
+The advantages of this algorithm against other approaches are that in this method data could be in any shape and form while in k-means data must be compact and not in complex forms. another benefit is that there is no need to define value of k the algorithm observe all the data and add cluster if it is needed.

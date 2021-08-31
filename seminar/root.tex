@@ -1,0 +1,96 @@
+%preamble
+\documentclass[12pt,a4paper]{article}
+
+\input{commands}
+
+%body
+\begin{document}
+	% to make page number letter instead of number
+	\pagenumbering{harfi}
+	% to remove page number in this page
+	\thispagestyle{empty}
+	\vspace*{-45mm}
+	\centerline{\includegraphics[height=4cm]{figures/srulogofa.png}}
+	\begin{center}
+		
+		\vspace{-3mm}
+		دانشکده مهندسی کامپیوتر
+		\\[.2cm]
+		
+		گروه هوش مصنوعی و رباتیکز
+		\\[1cm]
+		{\Large 
+			\textbf{سمینار کارشناسی ارشد با عنوان}
+		}
+		\\[.4cm]
+		\baselineskip=2cm
+		{\titr
+			\begin{huge}
+				بررسی معیارهای فیزیولوژیکی چشمی و مغزی در سنجش بار شناختی در فرآیند یادگیری چندرسانه‌ای از طریق فیلم آموزشی
+			\end{huge}
+		}
+		\\[1cm]
+		{\Large
+			{\traffic 
+				استاد راهنما
+			}
+			\\[.7cm]
+			{\Large \nastaliq دکتر رضا ابراهیم‌پور }
+			\\[.7cm]
+			{\Large\traffic  پژوهشگر
+			}
+		}
+		\\[.6cm]
+		{\Large \nastaliq امیرحسین اسعدی}
+		\\[.2cm]
+		بهار ۱۳۹۹
+	\end{center}
+% to go to new page
+\newpage
+% to change distance between lines
+\baselineskip=1cm
+% to create table
+\tableofcontents
+
+\newpage
+\listoftables
+
+\newpage
+\listoffigures
+
+\newpage
+\baselineskip=.75cm
+% to change pagenumbers in persian digit
+\pagenumbering{arabic}
+
+\section*{چکیده}
+در عصر دیجیتال با پیشرفت فناری، روش‌های آموزش و یادگیری نیز دچار تغییر شده‌اند، استفاده از ارائه‌های چندرسانه‌ای یکی از این تحولات است. ساختن این آموزش‌‌های چند رسانه‌ای اگر بدون اصول باشد نه‌تنها کمکی به یادگیرنده نمی‌کند بلکه می‌تواند فشار ذهنی بیشتری برای وی ایجاد کند.
+\\
+بار شناختی باری است که بر روی حافظه‌ی فعال و در طول یک فرآیند شناختی توسط محرک شناختی ایجاد
+می‌شود. هرچقدر که بار شناختی کمتر و در مقابل عملکرد دانش‌آموز پس از یادگیری بالاتر باشد، نشان‌دهنده‌ی فرآیند یادگیری مناسب است.
+\\
+از این رو اگر بتوان بار شناختی و عملکرد را در
+حین آموزش و یا آزمون اندازه‌گیری کرد می‌توان میزان کیفیت ارائه‌های چندرسانه‌ای را به‌صورت غیرمستقیم سنجید. به عنوان مثال دو فرد را در نظر بگیرید که در یک آزمون عملکرد مشابه‌ای داشته باشند، در این حالت یادگیری‌ای مؤثر بوده که بار شناختی کمتری ایجاد کرده باشد.
+\\
+روش‌ها و دسته‌بندی های گوناگونی برای سنجش بار شناختی وجود دارد در این مطالعه به طور خاص سنجش بار شناختی با داده هایی که از چشم و مغز گرفته می‌شوند مورد بررسی قرار گرفته و سایر روش‌ها به صورت کلی‌تر بحث شده است.
+% 1- introduction
+\include{part1}	
+% 2- Principle of Multimedia Design
+\include{part2}
+% 3- Cognitive load and Measurements
+\include{part3}
+% 4- Measurement with Eye and EEG
+\include{part4}
+% 5- Data process and Litreture review
+\include{part5}
+% 6- Concolusion
+\include{part6}	
+
+\printindex
+
+%make it left to right
+\setLTRbibitems
+\bibliographystyle{ieeetr-fa}
+\bibliography{references_BIBTEX}
+
+\end{document}

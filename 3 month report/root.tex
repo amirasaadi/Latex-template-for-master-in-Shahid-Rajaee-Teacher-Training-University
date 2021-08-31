@@ -1,0 +1,87 @@
+%preamble
+\documentclass[12pt,a4paper]{article}
+
+\input{commands}
+
+%body
+\begin{document}
+	% to make page number letter instead of number
+	\pagenumbering{harfi}
+	% to remove page number in this page
+	\thispagestyle{empty}
+	\vspace*{-45mm}
+	\centerline{\includegraphics[height=4cm]{figures/srulogofa.png}}
+	\begin{center}
+		
+		\vspace{-3mm}
+		دانشکده مهندسی کامپیوتر
+		\\[.2cm]
+		
+		گروه هوش مصنوعی و رباتیکز
+		\\[0.7cm]
+		{\Large 
+			\textbf{گزارش پیشرفت سه ماهه پایان‌نامه کارشناسی‌ارشد}
+			\\[0.2cm]
+			از تاریخ ۱۳۹۹/۰۷/۰۱ تا ۱۳۹۹/۰۹/۳۰
+		}
+		\\[.2cm]
+		\baselineskip=1.5cm
+		{\titr
+			\begin{huge}
+				رابطه بين فعاليت‌های مغزی و مشخصه‌های چندرسانه‌ای آموزشي
+			\end{huge}
+		}
+		\\[0.7cm]
+		{\large
+			{\traffic 
+				اساتید راهنما
+			}
+			\\
+			{\large \nastaliq دکتر رضا ابراهیم‌پور
+			\\
+		دکتر سید حمید امیری }
+			\\[.7cm]
+			{\traffic
+				استاد مشاور
+				\\
+			}
+			{\large \nastaliq دکتر علی‌رضا بساق‌زاده
+			}
+			\\[.5cm]
+			{\large\traffic  پژوهشگر
+			}
+		}
+		\\
+		{\large \nastaliq امیرحسین اسعدی}
+		\\
+		پاییز ۱۳۹۹
+	\end{center}
+% to go to new page
+\newpage
+% to change distance between lines
+\baselineskip=1cm
+% to create table
+\tableofcontents
+
+%\newpage
+%\listoftables
+
+\newpage
+\listoffigures
+
+\newpage
+\baselineskip=.75cm
+% to change pagenumbers in persian digit
+\pagenumbering{arabic}
+
+
+% 1- Proposal Reveiw
+\include{part1}	
+% 2- three month report
+\include{part2}
+%make it left to right
+\setLTRbibitems
+\bibliographystyle{ieeetr-fa}
+\bibliography{references_BIBTEX}
+
+\end{document}
